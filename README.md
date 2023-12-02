@@ -81,3 +81,20 @@ There are 2 main ways to process data:
 - Data size is unknown.
 - Data is processed as it arrives.
 - No much heavy processing - take millisecond or seccond to process data.
+
+### Seciont 3: GCP Fundamentals
+
+#### Regions & zones
+GCP manages their services across multiple regions (Singapore, US West, ...). Inside individual region, there are multiple zones. Region is nothing but a geographical area and zone is a data center. The concept behind the region and zonze solves some of the problems:
+
+- Low latency
+- Follow government rules
+- High availability
+- Disaster recovery
+
+![Region & Zone](images/section03/region_zone.png "Data types and their services")
+
+The naming of region and zone follow pattern: `<region>-<zone>`
+E.g: `northamerica-norteast1-a` means `northamerica-norteast1` region and zone `a`.
+
+Managed location by GCP: https://cloud.google.com/about/locations
