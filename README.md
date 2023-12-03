@@ -160,3 +160,11 @@ Managed location by GCP: https://cloud.google.com/about/locations
     1. Create cluster
     2. Deploy workload (container image)
     3. Expose outside world
+
+### Cloud Function
+- Single purpose micro services
+- Deploy code as function
+- Event based triggerL
+    - HTTP
+    - Pub/sub
+    - Object upload in Cloud Storage
