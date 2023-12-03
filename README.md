@@ -114,7 +114,7 @@ Managed location by GCP: https://cloud.google.com/about/locations
 - Can assign a role to an identity, but cannot assign permission directly.
 - Role can be classified into 3 categroies: primitive, pre-define, custom
 
-![Roles Diagram](images/section03/iam_role_perm.png "Roles Diagram")
+![Roles Diagram](images/section04/iam_role_perm.png "Roles Diagram")
 
 #### Service Account
 - Account for none human: app, service.
@@ -168,3 +168,9 @@ Managed location by GCP: https://cloud.google.com/about/locations
     - HTTP
     - Pub/sub
     - Object upload in Cloud Storage
+
+## Section 5: Storage Products
+Based on how the data is structured, there is an appropriate storage product for it.
+
+![Storage Product 1](images/section05/storage_product_1.png)
+![Storage Product 2](images/section05/storage_product_2.png)
