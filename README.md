@@ -174,3 +174,75 @@ Based on how the data is structured, there is an appropriate storage product for
 
 ![Storage Product 1](images/section05/storage_product_1.png)
 ![Storage Product 2](images/section05/storage_product_2.png)
+
+## Section 6: Google Cloud Storage
+
+### Instruction
+- Object storage solution in GCP.
+- Unstructured data storage:
+    - Image
+    - Video
+    - Binary file, etc...
+- Cloud storage can be used for long term archival storage.
+- Can be access object over HTTP, Rest API,...
+- No capacity planning required - scale to exabyte.
+- Unlimited data can be stored.
+- By default, data is encrypted.
+- In transit, data is also encrypted.
+- 0 <= Object size <= 5GB
+- Object can be globally access.
+- Single API to access accross multiple storage class.
+- Data is geo-redundant (High Availability):
+    - Multiregional
+    - Dual-region storage
+
+### Object Organization
+- Bucket name is unique globally.
+- Bucket name appears in URL -> careful while naming bucket.
+- Bucket level lock with data retention policy.
+- Object are immutable.
+- Object can be versioned.
+
+### Storage Location
+1) Region
+- Lowest latency within a single region.
+- Replicated data across multiple zones in a single region.
+2) Dual-region
+- High availability and low latency across 2 regions (Paired region)
+- Auto-failover
+3) Multi-region
+- Highest availability across continent area: US, AU, Asia,...
+- Auto-failover
+
+### Storage Class
+Depends on data access frequency then choose the appropriate storage class. There are 3 storage classes:
+
+1) Standard
+- High frequency access (good for hot data)
+- Storage cost: Highest
+- Access cost: Lowest
+- SLA:
+    - 99.95% Multi/Dual
+    - 99.9% Region
+
+2) Near Line
+- Low frequency access (once a month)
+- Storage cost: High (lower than Standard class)
+- Access cost: Fairly low (higher than Standard class)
+- SLA:
+    - 99.95% Multi/Dual
+    - 99.9% Region
+
+3) Cold
+- Very low frequency access (once a quarter)
+- Storage cost: Fairly low (lower than Near Line class)
+- Access cost: Fairly high (higher than Near Line class)
+- SLA:
+    - 99.95% Multi/Dual
+    - 99.9% Region
+
+4) Archive
+- Offline data (once a year)
+- Storage cost: Cheapest
+- Access cost: Most expensive
+- SLA: No SLA
