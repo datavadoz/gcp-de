@@ -225,7 +225,7 @@ Depends on data access frequency then choose the appropriate storage class. Ther
     - 99.95% Multi/Dual
     - 99.9% Region
 
-2) Near Line
+2) Nearline
 - Low frequency access (once a month)
 - Storage cost: High (lower than Standard class)
 - Access cost: Fairly low (higher than Standard class)
@@ -233,10 +233,10 @@ Depends on data access frequency then choose the appropriate storage class. Ther
     - 99.95% Multi/Dual
     - 99.9% Region
 
-3) Cold
+3) Coldline
 - Very low frequency access (once a quarter)
-- Storage cost: Fairly low (lower than Near Line class)
-- Access cost: Fairly high (higher than Near Line class)
+- Storage cost: Fairly low (lower than Nearline class)
+- Access cost: Fairly high (higher than Nearline class)
 - SLA:
     - 99.95% Multi/Dual
     - 99.9% Region
