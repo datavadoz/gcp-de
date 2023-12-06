@@ -268,3 +268,14 @@ There are 3 ways that we can do to ecrypt our data in GCS:
     - We will generate key with command: `openssl rand -base64 32`
     - gsutil - encrypt with CSEK: `gsutil -o 'GSUtil:encryption_key='<openssl_key> cp <file> gs://<bucket>/<destination_path>`
     - We cannot open this file normally via browser, we must use `gsutil` with encryption key to access it: `gsutil -o 'GSUtil:encryption_key='<openssl_key> cat gs://<bucket>/<destination_path>`
+
+### Object versioning
+- Help to prevent accidental deletion of object.
+- Enable/Disable versioning at bucket level.
+- Versioning are not enabled by default.
+- Get access to older version with `<object_key>#<version_number>`.
+- If we don't specify version numbner, always retrieve the latest version.
+- If we don't need earlier version, delete it & reduce cost.
+- To enable: `gsutil versioning set on gs://<bucket_name>`
+- To see if the version is enabled or not: `gsutil versioning get gs://<bucket_name>`
+- To list all files and see their version number: `gsutil ls -a gs://<bucket_name>`
