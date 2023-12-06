@@ -246,3 +246,25 @@ Depends on data access frequency then choose the appropriate storage class. Ther
 - Storage cost: Cheapest
 - Access cost: Most expensive
 - SLA: No SLA
+
+### Object Lifecycle Management
+- Based on condition, what action needs to perform on object.
+- Conditions:
+    - Object age
+    - Object file type
+    - After some specific date
+- Action:
+    - Transition to different storage class for high performance: from Standard to Nearline, from Coldline to Archive,...
+
+### Secure Data With Encryption
+There are 3 ways that we can do to ecrypt our data in GCS:
+- Google managed encryption Keys
+    - No configuration
+    - Fully managed
+- Customer managed encryption keys
+    - Create keyring in Cloud KMS (Key Management Service)
+    - Key will be managed by customer (Key rotation)
+- Customer supplied encryption keys
+    - We will generate key with command: `openssl rand -base64 32`
+    - gsutil - encrypt with CSEK: `gsutil -o 'GSUtil:encryption_key='<openssl_key> cp <file> gs://<bucket>/<destination_path>`
+    - We cannot open this file normally via browser, we must use `gsutil` with encryption key to access it: `gsutil -o 'GSUtil:encryption_key='<openssl_key> cat gs://<bucket>/<destination_path>`
