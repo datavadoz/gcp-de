@@ -296,3 +296,8 @@ There are 3 ways that we can do to ecrypt our data in GCS:
 - URL expires after defined period of time.
 - Max period for such URL is value is 7 days.
 - Using command: `gsutil signurl -d 10m <SA_key_json_path> gs://<bucket_name>/<fipath>`
+
+### Bucket Retention Policy
+- Minimum duration for which bucket will be protected from:
+    - Deletion
+    - Modification
