@@ -269,7 +269,7 @@ There are 3 ways that we can do to ecrypt our data in GCS:
     - gsutil - encrypt with CSEK: `gsutil -o 'GSUtil:encryption_key='<openssl_key> cp <file> gs://<bucket>/<destination_path>`
     - We cannot open this file normally via browser, we must use `gsutil` with encryption key to access it: `gsutil -o 'GSUtil:encryption_key='<openssl_key> cat gs://<bucket>/<destination_path>`
 
-### Object versioning
+### Object Versioning
 - Help to prevent accidental deletion of object.
 - Enable/Disable versioning at bucket level.
 - Versioning are not enabled by default.
@@ -279,3 +279,14 @@ There are 3 ways that we can do to ecrypt our data in GCS:
 - To enable: `gsutil versioning set on gs://<bucket_name>`
 - To see if the version is enabled or not: `gsutil versioning get gs://<bucket_name>`
 - To list all files and see their version number: `gsutil ls -a gs://<bucket_name>`
+
+### Access Control In GCS
+- Who can do what on GCS at what level.
+- There are 3 ways to grant permission into a bucket:
+    - Apply at project level
+        - Using IAM: storage predefined role or custom role.
+    - Apply at bucket level
+        - Uniform level access: apply for all objects inside bucket (no object level permission).
+        - Fine grained permission: ACL (Access Control List) for each object separately.
+    - Assign bucket level role
+        - Select bucket & assign role to a user.
