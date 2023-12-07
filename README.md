@@ -290,3 +290,9 @@ There are 3 ways that we can do to ecrypt our data in GCS:
         - Fine grained permission: ACL (Access Control List) for each object separately.
     - Assign bucket level role
         - Select bucket & assign role to a user.
+
+### Signed URL
+- Give temporary access to user who does not have Google Account.
+- URL expires after defined period of time.
+- Max period for such URL is value is 7 days.
+- Using command: `gsutil signurl -d 10m <SA_key_json_path> gs://<bucket_name>/<fipath>`
