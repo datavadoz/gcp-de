@@ -301,3 +301,32 @@ There are 3 ways that we can do to ecrypt our data in GCS:
 - Minimum duration for which bucket will be protected from:
     - Deletion
     - Modification
+
+## Section 7: Data Transfer Service
+There are 3 scenarios to use DTS:
+- From on-premise to GCS.
+- From GCS bucket to another GCS bucket.
+- From another cloud platform to GCS bucket (S3 bucket to GCS bucket).
+
+### On-premiseto GCS
+There are 3 ways to do this:
+
+1. `gsutil`:
+2. Transfer Service for on-premise data:
+    - Quickly and securely move data from private data centers into GCS.
+    - Two steps process:
+        1. Install an agent
+        2. Create transfer job inside GCP
+3. Transfer Appliance:
+    - Physical device which securely transfer large amounts of data to GCP.
+    - Need to request to Google.
+    - When data that exceeds 20TB or would take more than a week to upload.
+
+### Transfer Service
+- This will quickly and securely transfer data into GCS.
+- From various sources:
+    - Amazon S3
+    - Azure Blob Storage.
+    - Move data between GCS buckets.
+- Create Transfer job.
+- Onetime run or recurring.
