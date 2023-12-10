@@ -426,3 +426,18 @@ Learn some database related terminology from cloud perspective.
     - Quarterly: 13m 2.4s
     - Yearly: 52m 9.8s
 - Ref: https://uptime.is/
+
+## Section 10: GCP Database Products
+
+### Structured data
+- Cloud SQL
+- Cloud Spanner
+- Big Query
+
+### Semi-structured data
+- BigTable
+- Datastore
+- Memorystore
+
+### Other
+- Pub/sub
