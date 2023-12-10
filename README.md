@@ -384,3 +384,45 @@ Similar to NFS and we can manage the file sharing.
 - Local disk
     - Attach disk with VM & containers
     - Temporary high performance attach disk
+
+## Section 9: Database concepts
+Learn some database related terminology from cloud perspective.
+
+### OLTP (Online Transaction Processing)
+- Simple query
+- Large number of small trasactions
+- Database modification
+- Traditional RDMS: MySQL, PostgreSQL, Oracle, MSSQL
+- GCP: Cloud SQL, Cloud Spanner
+
+### OLAP (Online Analytical Processing)
+- Data warehouse
+- Data is collected from multiple sources
+- Complex query
+- Data analysis
+- GCP: Google Big Query
+
+### RTO vs RPO
+
+![RTO & RPO](images/section09/rpo_rto.png)
+
+- RTO: Recovery Time Objective
+    - Maximum defined time for a system can be down
+    - When a problem happens, engineering team must bring system back within RTO.
+- RPO: Recovery Point Objective
+    - Maximum time for an organization can tolorate data loss
+
+### Durability
+- How healthy & resilient your data is
+- For example: Object Storage provider measure durability in terms of number of 9's (99.9999999%). That means that even with 1 billion objects, you would likely go a hundred years without losing a single one.
+
+### Availability
+- Data is replicated across multiple regions to gain higher availability.
+- Availability is defined by SLA (Service Level Agreement).
+- For example: SLA level of 99.99 % uptime/availability results in the following periods of allowed downtime/unavailability:
+    - Daily: 8.6s
+    - Weekly: 1m 0.48s
+    - Monthly: 4m 21s
+    - Quarterly: 13m 2.4s
+    - Yearly: 52m 9.8s
+- Ref: https://uptime.is/
