@@ -330,3 +330,57 @@ There are 3 ways to do this:
     - Move data between GCS buckets.
 - Create Transfer job.
 - Onetime run or recurring.
+
+## Section 8: Google Block Storage & Filestore
+
+### Block Storage
+Block storage is similar to hard disk storage in PC/laptop. There are 2 kinds of block storages:
+1. Direct attached storage - Local SSD
+    - Physically attached to VM
+    - Very high performance - 10x to 100x of persistence disk
+    - Costlier than persistence disk
+    - Cannot re-attached to other VM
+    - Once VM destroy, locall SSD will be deleted.
+    - Lower availability
+    - Temporary/ephemeral storage
+    - No snapshot
+    - Let's see in action
+2. Network attached storage
+    - Persistence disk
+    - Zonal, regional
+    - Not attached directly to any VM
+    - Can be re-attached with other VM
+    - Very flexible - resize easily
+    - Permanent storage
+    - Snapshot supported
+    - Cheaper than local SSD
+
+### Filestore
+Similar to NFS and we can manage the file sharing.
+- Fully managed, high performance filestore
+- Network attached storage (NAS) for Compute Engine and GKE instance
+- Minimum 1TB, maximum 64TB
+- Support for HDD and SSD
+- Enterprise level - easy file sharing
+- Costly compare to cloud storage
+- Need to use `nfs-common` (`mount` command) to mannually attach to Filestore
+
+### Which storage to use and when
+- Cloud Storage
+    - Unstructured data storage
+    - Video stream, image
+    - Binary data
+    - Staging environment
+    - Compliance
+    - Backup
+    - Data lake
+- Filestore
+    - Performance predictable
+    - Lift-shift millions of files
+- Persistent disk
+    - Attach disk with VM & containers
+    - Share read-only disk with multiple VM
+    - Database storage
+- Local disk
+    - Attach disk with VM & containers
+    - Temporary high performance attach disk
