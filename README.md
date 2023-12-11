@@ -441,3 +441,26 @@ Learn some database related terminology from cloud perspective.
 
 ### Other
 - Pub/sub
+
+## Section 11: Google Cloud SQL
+- Fully supported RDMS: MySQL, PostgreSQL, SQL Server
+- Can easily lift & shift above database to GCP
+- Regional database with 99.95% SLA
+- Storage up to 30TB (if your data is beyond 30TB, Google Cloud SQL is not a good approach)
+- Scale up to 96 core & 624 GB memory
+- No horizontal scaling
+- Data is encrypted with Google managed key or CMEK
+- Cloud SQL can be accessed from anywhere like - App Engine, Compute Engine,...
+- Use for storing transactional database
+- Ecommerce, CRM kind application backend
+- No maintenance & auto update
+- Back-up database
+    - On-demand backup
+    - Schedule backup
+- Database migration service (DMS)
+    - Migrate data from different SQL system to Cloud SQL
+- Point-in time recovery: can go back in a time and recover data at particular time in past
+- Scale with read replicas - to transfer read workload to other instance
+- Export data:
+    - gcloud utility or Cloud Console
+    - In SQL/CSV format
