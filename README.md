@@ -464,3 +464,10 @@ Learn some database related terminology from cloud perspective.
 - Export data:
     - gcloud utility or Cloud Console
     - In SQL/CSV format
+
+### Google Cloud SQL Failover
+- Google CLoud SQL uses Active - Standby model to implement its High Availability feature.
+- There are 2 instances: 1 Active and 1 Standby.
+- Once Active instance goes down, the Standby one will be promoted to be Active and handle the traffic.
+
+![High Availability](images/section11/ha.png)
