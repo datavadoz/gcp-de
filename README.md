@@ -471,3 +471,28 @@ Learn some database related terminology from cloud perspective.
 - Once Active instance goes down, the Standby one will be promoted to be Active and handle the traffic.
 
 ![High Availability](images/section11/ha.png)
+
+## Section 12: Google Cloud Spanner
+- Cloud Spanner = Cloud SQL + Horizontal Scaling
+- Cloud Spanner is more powerful and expensive than Cloud SQL
+- Use when data volume > 2TB
+- Can be scaled to Petabyte
+- 99.999% availability
+- Cloud native solution and specific to GCP (Lift & shift is not recommended)
+- Data export
+    - Cannot export with `gcloud`
+    - Can export via Cloud Console or Cloud Dataflow job.
+    - When export data from Spanner to GCS, Dataflow job is required
+
+### Cloud Spanner vs Cloud SQL
+![Cloud Spanner vs Cloud SQL](images/section12/spanner_vs_sql.png)
+
+- Cloud SQL:
+    - Lift & shift SQL based system
+    - CRM, Ecommerce app
+    - Max data size is 30TB
+
+- Cloud Spanner:
+    - Horizontal scalability
+    - Low latency
+    - Data storage is beyond TB
