@@ -496,3 +496,14 @@ Learn some database related terminology from cloud perspective.
     - Horizontal scalability
     - Low latency
     - Data storage is beyond TB
+
+## Section 13: NoSQL Instruction
+- Flexible schema, number of properties is varied.
+- Data model will be like:
+    - Document
+    - Key-value pair
+    - Graph based
+
+- To store such kinds of flexible data, GCP provides:
+    - BigTable
+    - Firestore & Datastore (Firestore is the next gen of Datastore)
