@@ -519,4 +519,23 @@ Learn some database related terminology from cloud perspective.
 - Use case:
     - Session info
     - Product catalog
-- Export data from `gcloud`: cannot export via Cloud Console
+- Export data from `gcloud` - cannot export via Cloud Console
+
+### Cloud Datastore vs RDBMS
+
+![Cloud Datastore vs RDBMS](images/section14/datastore_vs_rdbms.png)
+
+### Cloud Firestore
+- Firestore is the next generation of Datastore
+- Highly scalable NoSQL database
+- Collection & Document model
+- Choose 1 of 2 modes:
+    - Native mode
+    - Datatstore mode
+- Real-time updates
+- Mobile and web client libraries
+
+### Cloud Firestore vs RDMS
+![Cloud Firestore vs RDBMS](images/section14/firestore_vs_rdbms.png)
+
+**Note: Can only use Datastore or Firestore in per GCP project.**
