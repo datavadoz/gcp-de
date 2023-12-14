@@ -507,3 +507,16 @@ Learn some database related terminology from cloud perspective.
 - To store such kinds of flexible data, GCP provides:
     - BigTable
     - Firestore & Datastore (Firestore is the next gen of Datastore)
+
+## Section 14: Cloud Datastore
+- Highly scalable NoSQL database
+- Serverless
+- Document kind data storage - MongoDB
+- SQL Like Query - GQL
+- Support ACID Transaction
+- Multiple indexes
+- Data replication across different region
+- Use case:
+    - Session info
+    - Product catalog
+- Export data from `gcloud`: cannot export via Cloud Console
