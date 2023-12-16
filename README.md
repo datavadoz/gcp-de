@@ -539,3 +539,13 @@ Learn some database related terminology from cloud perspective.
 ![Cloud Firestore vs RDBMS](images/section14/firestore_vs_rdbms.png)
 
 **Note: Can only use Datastore or Firestore in per GCP project.**
+
+### Section 15: Google Cloud Memorystore
+- Kinda in-ram database where data is stored in primary memory
+- Very fast data access
+- Two supported engines:
+    - Redis
+    - Memcached
+- Can only access via iternal IP
+- High availability with 99.99% SLA
+- Import data from GCS to Memorystore
