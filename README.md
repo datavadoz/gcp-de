@@ -583,3 +583,32 @@ Data processing service that GCP provides:
 - Cloud Composer - Airflow in GCP
 - DataPrep
 - Cloud PubSub
+
+## Section 18: Google Cloud BigQuery
+- Data warehouse solution in GCP
+- Like relational database - SQL schema
+- Serverless
+- Built upon BigTable + GCP Infrastructure
+- BigQuery is columnar storage
+- This is for analytical database, not for transactional purpose
+- Exabyte scale
+- Query using standard SQL
+- BigQuery can query from external data source (GCS, SQL, BigTable)
+- BigQuery can load data from various sources (CSV, JSON, Avro, SQL, ...)
+- Query cost is very expensive: $5 per 1TB data scanned
+- Before executing query, do dry run
+- BQ data organization:
+    - `Project -> dataset -> table`
+    - `Project` is top level container in GCP
+    - `Dataset` hold multiple `tables`
+    - Each `table` must belong to `dataset`
+    - Assign BQ related role at `organization`, `project` or `dataset` level
+    - `Table` contains data and it has schema
+    - `Job` is operation that is performed on BQ resources (load, query, extract, copy)
+
+### When BigQuery should be used
+- When workload is analytical
+- Large data volume
+- For complex query which takes much execution time
+- Off-load some workload from primary transaction DB
+- No join is preferred (data is denormalized)
