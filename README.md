@@ -572,3 +572,14 @@ Learn some database related terminology from cloud perspective.
 - Used for:
     - Time series data
     - Financial data
+
+## Section 17: Data Processing Product & Exploration
+
+Data processing service that GCP provides:
+- BigQuery - Analytical workload (storage + processing)
+- DataFlow - Apache Beam
+- DataProc - Spark, Hadoop
+- DataFusion - Drag & drop pipeline (without code)
+- Cloud Composer - Airflow in GCP
+- DataPrep
+- Cloud PubSub
