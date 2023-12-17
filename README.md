@@ -549,3 +549,26 @@ Learn some database related terminology from cloud perspective.
 - Can only access via iternal IP
 - High availability with 99.99% SLA
 - Import data from GCS to Memorystore
+
+### Section 16: Google Cloud BigTable
+- Fully managed wide column NoSQL database
+- Columns are grouped into column family
+- No serverless
+- Scale horizontally with multiple node
+- Milisecond latency
+- Handles millions of request per sercond
+- How to access:
+    - `cbt` - command line (part of cloud sdk)
+    - HBase API
+- No multi column index
+    - Only `row key` based indexing
+    - Design `row key` is very important:
+        - Which query is frequent in application
+        - No hot spotting
+        - Don't use monotonically increasing key
+- Seamless integration with:
+    - Warehouse - BigQuery
+    - Manchine Learning
+- Used for:
+    - Time series data
+    - Financial data
