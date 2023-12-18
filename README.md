@@ -612,3 +612,33 @@ Data processing service that GCP provides:
 - For complex query which takes much execution time
 - Off-load some workload from primary transaction DB
 - No join is preferred (data is denormalized)
+
+## Section 19: Google Cloud PubSub
+### What is PubSub
+- Fully-managed PubSub system inside Google Cloud
+- Serverless
+- Auto-scaling and auto-provisioning with support from zero to hundreds of GB/second
+- Topic - message storage
+- Publisher sends message to the topic at `pubsub.googleapis.com`
+- Push&pull way to access message
+- Once subscriber receives message, ACK is sent
+- Cloud PubSub acts as staging environment for many GCP services
+
+![PubSub2](images/section19/pubsub2.png)
+
+### How it work
+- Fully-managed asynchronous messaging service
+- Scale to billions of message per day
+- Publisher - App send message to Topic
+- Push & Pull way to access messages
+    - Pull - Subscriber pull message
+    - Push - Message will be sent to subscriber via webhook
+- One topic can have multiple subscribers
+- One subscriber can also have multiple topics
+
+![PubSub1](images/section19/pubsub1.png)
+
+### Advantage of PubSub
+- Durability of data will increase
+- Highly scalable
+- Decoupling between 2 systems (Publisher & Subscriber)
