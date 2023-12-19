@@ -606,6 +606,8 @@ Data processing service that GCP provides:
     - `Table` contains data and it has schema
     - `Job` is operation that is performed on BQ resources (load, query, extract, copy)
 
+- When perform a query on a specific table for the first time, BQ will scan the actual data. Then, the result will be stored in a temporary table which is expired after 24 hours. The next run with the same query on the same table will return the the result of that temporary table instead of scanning the whole table.
+
 ### When BigQuery should be used
 - When workload is analytical
 - Large data volume
