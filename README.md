@@ -644,3 +644,30 @@ Data processing service that GCP provides:
 - Durability of data will increase
 - Highly scalable
 - Decoupling between 2 systems (Publisher & Subscriber)
+
+## Section 20: Cloud DataFlow
+- Managed service for variety of data processing
+- An advanced unified programming model to impelement both batching and streaming that run on various execution engine/runner
+- Cloud version of Apache Beam
+- Serverless, fully managed by GCP
+- Horizontal autoscaling of worker
+- Jobs created via:
+    - Pre-define template
+    - Notebook instance (write data pipeline in Java, Python, SQL)
+    - Cloud Shell or local machine
+
+### How DataFlow works
+- Write job in Java, Python, Go
+- Unified API for both batch + stream processing so that's why we do not need to handle batch data and streaming data separately
+- Execution:
+    - Direct Runner (scaling issue so run on local only)
+    - Apache Flink
+    - Apache Spark
+    - Cloud DataFlow (inside GCP)
+
+### Apache Beam
+- Pipeline
+- IO Transform
+- Pcollection (Fundamental data type in Beam)
+- Ptransform (The operations executed within a pipeline)
+- Runner (Execution engine - where Apache Beam code is executed)
