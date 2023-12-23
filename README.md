@@ -644,6 +644,7 @@ Data processing service that GCP provides:
 - Durability of data will increase
 - Highly scalable
 - Decoupling between 2 systems (Publisher & Subscriber)
+- We can enforce data which travels through a particular topic to align with predefined schema
 
 ## Section 20: Cloud DataFlow
 - Managed service for variety of data processing
