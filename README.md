@@ -672,3 +672,14 @@ Data processing service that GCP provides:
 - Pcollection (Fundamental data type in Beam)
 - Ptransform (The operations executed within a pipeline)
 - Runner (Execution engine - where Apache Beam code is executed)
+
+## Section 21: Cloud DataProc
+- Managed Hadoop & Spark Services inside GCP
+- Can easilyu lift/shift existing Hadoop/Spark based job into GCP
+- Supported cluster type:
+    - Standard (1 master, N workers)
+    - Single node (1 master, 0 workers)
+    - High Availability (3 master, N workers)
+- Worker node can sit in a regular VM or preemptible VM (cost reduction)
+- Supported jobs: Hadoop, SparkR, Spark, SparkSQL, Hive, Pig, PySpark
+- This is not a serverless --> Need to create a cloud data block cluster before hand
