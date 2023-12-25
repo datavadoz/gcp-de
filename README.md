@@ -692,3 +692,11 @@ Data processing service that GCP provides:
     - Developer
     - Basic
     - Enterprise
+
+## Section 23: Cloud Composer
+- Fully managed GCP version of Apache Airflow
+- Airflow is a workflow & orchestration engine
+- With Airflow we can write Python code to schedule and monitor workflows (DAGs)
+- Built-in integration with other GCP services
+- Cloud Composer is not serverless so we need to create instance manually before hand
+- Cloud Composer is deployed via K8S under the hood in GCP
