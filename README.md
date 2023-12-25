@@ -683,3 +683,12 @@ Data processing service that GCP provides:
 - Worker node can sit in a regular VM or preemptible VM (cost reduction)
 - Supported jobs: Hadoop, SparkR, Spark, SparkSQL, Hive, Pig, PySpark
 - This is not a serverless --> Need to create a cloud data block cluster before hand
+
+## Section 22: Data Fusion
+- Fully managed cloud native solution to build data pipeline without code
+- 150+ preconfigured connectors & transformations
+- Built with open-source CDAP
+- 3 editions are available:
+    - Developer
+    - Basic
+    - Enterprise
