@@ -716,3 +716,23 @@ Data processing service that GCP provides:
 - Replace with some token (Replacement)
 - Replace one/more character with some other char (Masking)
 - Encrypt sensitive data (Encryption)
+
+### TEMPLATES
+- Configuration which define for
+    - Inspection of jobs (eg: find sensitive data)
+    - De-identification of jobs (eg: remove sensitive data)
+- Once template defined, can be reused for other jobs
+
+### INFOTYPES
+- What to scan for
+    - Bult-in (eg: credit card, SSN, age, ...)
+    - Stored (Custom info type based on some fixed words, regex, custom dictionary,...)
+
+### MATCH LIKELIHOOD
+- Once sensitive data is idenified, mach likelihood is how much confidence this system DLP API has:
+    - LIKELIHOOD_UNSPECIFIED: Default, same as POSSIBLE
+    - VERY_UNLIKELY: lowest
+    - UNLIKELY: low
+    - POSSIBLE: so so
+    - LIKELY: high
+    - VERY_LIKELY: very high
