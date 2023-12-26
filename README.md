@@ -736,3 +736,14 @@ Data processing service that GCP provides:
     - POSSIBLE: so so
     - LIKELY: high
     - VERY_LIKELY: very high
+
+## Section 25: Data Catalog
+- A place to store metadata (data of data) from multiple places.
+- To understand data and find insight of existing data, Data Catalog plays an important role
+- There are 2 kinds of metadata:
+    - Technical metadata:
+        - For BigQuery and PubSub, these metadata resides inside individual products
+        - Technical metadata being registered by catalog automatically
+    - Business metadata
+        - Attach tag to existing data asset
+        - Define some tag template and attach metadata
