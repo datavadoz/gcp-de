@@ -700,3 +700,19 @@ Data processing service that GCP provides:
 - Built-in integration with other GCP services
 - Cloud Composer is not serverless so we need to create instance manually before hand
 - Cloud Composer is deployed via K8S under the hood in GCP
+
+## Section 24: Data Loss Prevention API
+- Discover, classify and protect most sensitive data (PII data)
+- Apply on GCS, BigQuery
+- DLP works on any kind of data (text, structured, semi-structured and unstructured data)
+- DLP will:
+    - Identify sensitive info
+    - De-identify data: Masking, encryption
+    - Re-identify data (in case you want to recover original data from masking or encryption)
+- Internally, DLP will pick a sample of data to inditify if there is a possibility the data can be sensitive.
+
+### De-identification of data
+- Remove sensitive data (Redaction)
+- Replace with some token (Replacement)
+- Replace one/more character with some other char (Masking)
+- Encrypt sensitive data (Encryption)
