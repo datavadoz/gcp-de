@@ -747,3 +747,38 @@ Data processing service that GCP provides:
     - Business metadata
         - Attach tag to existing data asset
         - Define some tag template and attach metadata
+
+## Section 26 + 27: Machine Learning Basics
+There are 2 types of ML:
+- Supervised learning:
+    - Label has been given
+    - Regression
+    - Classification
+- Unsupervised learning:
+    - No labels
+    - Find structure within data
+
+### Machine Learning Workflow
+
+**Training process:**
+
+    Ingest Data --> Data Preparation --> Split Data (Traning: 80 + Testing: 20) --> Apply Algorithm to Traning Data --> Model
+
+**Testing process:**
+
+Once model from traning process is produced, we use it with testing data for testing purpose:
+
+    Testing data --> Model --> Predition
+
+Once we sastify with the model, we deploy that model into production. Otherwise, go back to training process.
+
+### Machine Learning solution in GCP
+- Pre-trained model
+    - For generic use cases
+    - Vision API, Speech API, Language API
+- Auto ML:
+    - Just provide your data and leave the traning work for Google
+- Custom training:
+    - Full control to perform the entire ML workflow.
+    - Using libraries: TensorFlow, PyTourch, Scikit-learn,...
+    - Spark ML, BigQuery ML
