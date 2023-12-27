@@ -782,3 +782,16 @@ Once we sastify with the model, we deploy that model into production. Otherwise,
     - Full control to perform the entire ML workflow.
     - Using libraries: TensorFlow, PyTourch, Scikit-learn,...
     - Spark ML, BigQuery ML
+
+## Section 28: Data Preparation with DataPrep
+- Intelligient Data Preparation tool
+- Build by Trifacta - 3rd tool, not cloud natvie
+- Play with this tool without any code, just click
+- Serverless - No infra to be managed
+- Automatically detect schema, anomolies
+- Do all time consumming tasks easily
+- Concern - Need to share data with Trifacta?
+
+![DataPrep Workflow](images/section28/dataprep_workflow.png)
+
+
