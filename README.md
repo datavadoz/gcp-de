@@ -816,3 +816,9 @@ Once we sastify with the model, we deploy that model into production. Otherwise,
 
 ### Speech to Text API (vice versa)
 - straight forward, convert speech (audio) to text and vice versa
+
+## Section 30: Auto Machine Learning
+- Unlike Pre-built model, Auto ML let us throw data to GCP then Google will train the provided data with their algorithm and find the best model for us
+- Use Auto ML when we have some custom requirements
+- Auto ML is a part of Vertex AI
+- Once get the model, we need to deploy it and create endpoint for it
