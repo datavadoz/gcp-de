@@ -794,4 +794,25 @@ Once we sastify with the model, we deploy that model into production. Otherwise,
 
 ![DataPrep Workflow](images/section28/dataprep_workflow.png)
 
+## Section 29: ML APIs: Pre-built Model
+- Google has already trained ML/AL algorithm to build model
+- User can use `gcloud` or SDK to use the pre-trained model base on specific use cases:
+    - Object recognition/detection - Vision API
+    - OCR
+    - Speech to text
+    - Language translation
+    - NLP
 
+### Vision API
+- Detect printed and handwritten text
+- Detect objects
+- Identify popular places and product logos
+- ...
+
+### Natural Language API
+- Identify entities within documents
+- Sentiment analysis
+- Content classificaion
+
+### Speech to Text API (vice versa)
+- straight forward, convert speech (audio) to text and vice versa
